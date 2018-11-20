@@ -1,0 +1,7 @@
+<h3><%= @tasks.details %></h3>
+
+<p><%= link_to "Back to list of tasks", tasks_path %></p>
+
+<%= link_to "Update this task", edit_path %>
+
+<%= link_to "Delete this task", destroy_path(@tasks.id), method: :delete %>
